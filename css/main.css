@@ -1,0 +1,81 @@
+.pp-context-search {
+    background: #FFFFFF;
+    box-shadow: #FFFFFF;
+    box-shadow: 6px 0px 81px -8px rgba(0,0,0,0.5);
+    width: 350px;
+    margin: 100px auto;
+    font-family: sans-serif;
+    color: #555;
+    background-image: url('data:image/gif;base64,R0lGODlhIAAgAOYAAAAAAP////n5/Pb2+P7+//39/ubn7urr8Lu/z83Q3MvO2t3f5/Lz9/Hy9vDx9e7v8+3u8pWctL/D0cXJ1+Lk6+Hj6piftpmgt5yjuZuiuJ2kuqmvw6etwamvwri9zre8zbW6y7i9zY6Xr5Kbs5CZsY+YsJOctJaetZujuaWswaWswKivwqeuwa60xsrO2svP2srO2dfa49bZ4tXY4dzf5+fp7+bo7uXn7fP09/Lz9qCovKWtwaSswKOrv620xbm/zsjN2ers8efp7rC3x7vBz8/U3uHk6u/x9fn6/Pb3+fX2+O3v8vj5+v3+/vz9/QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwAAAAAIAAgAAAH/4ABgoODDwo+OicjGisSFASEkZKEFSoil5iZFgkFk54DLZmiohhGnpEHKKOrmCRFp4IHJqIbCUI4SUExICOiMKcDqpg7N544P5klC56hmERNsAExvZcRSpIVmQjRgwslzpKWlzvQ3IITrUeED5nF5oJOGZhAhC6YG++EL5gqhD6YCfINcoCphIBBOjDVEDjoAiYIg05gwsFQUA9MFQZRE5GkYgAOmJYJ0oApiEcMmGwMWoEpRkUmJDDlGCQBE4iKMjChIEQB0wiKAjtg8kCIgAVMPwTSaBcpQSaX5hocvcRDUgGUl0aIhNUg4aUSBiYZifl1gpNTNKZeGnKqiKgML1YcEGISY8OoEjNOwfgm6kIPFhjIrsJ7akEEVneH8BVB2JMSIoJZqQg7Y3FjTw6ApFh8CYUHd4IqF8wbDcmSCgtsMPAk+itpj5FaiwgBe5LoD7VZ0w4QCAA7');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 20px 17px;
+}
+.pp-context-search input[type=checkbox] {
+    transform: scale(1.8);
+    margin: 5px 20px 5px 17px;
+    background: #268ef6;
+    color: #FFF;
+}
+.pp-context-search input[type=text]:focus {
+    outline: 0;
+}
+.pp-context-search input[type=text] {
+    border: none;
+    width: 300px;
+    height: 50px;
+    margin-left: 50px;
+    background: transparent;
+    font-size: 1.1rem;
+    color: #969cae;
+}
+.pp-context-search-list-box li {
+    padding: 5px 0;
+    color: #414a67;
+}
+.pp-context-search-list-box ul {
+    list-style-type: none;
+    padding-left: 10px;
+}
+.pp-context-search-list-box {
+    height: 500px;
+    border-top: solid 1px #BBB;
+    border-bottom: solid 1px #BBB;
+    overflow: auto;
+}
+.pp-context-selection-controls div {
+    display: inline-block;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.pp-context-selection-controls {
+    height: 30px;
+    border-bottom: solid 1px #BBB;
+    padding-left: 20px;
+    padding-top: 15px;
+    color: #5e6987;
+}
+.pp-context-selection-controls-highlight {
+    color: #268ef6;
+}
+.pp-context-okcancel-controls button {
+    border-radius: 5px;
+    height: 40px;
+    width: 100px;
+    margin-left: 10px;
+    font-size: 1rem;
+    border: none;
+}
+.pp-context-cancel-button {
+    background: #f1f2f8;
+    color: #414a67;
+}
+.pp-context-ok-button {
+    background: #268ef6;
+    color: #FFF;
+}
+.pp-context-okcancel-controls {
+    height: 50px;
+    padding-top: 10px;
+    padding-left: 5px;
+}

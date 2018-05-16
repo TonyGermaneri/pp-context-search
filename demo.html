@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+        <script src="lib/main.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var contextSeach = ppContextSearch();
+                contextSeach.items = [
+                    {value: 'Denver', selected: true},
+                    {value: 'Los Angeles', selected: true},
+                    {value: 'Omaha', selected: true},
+                    {value: 'Rancho Del Ray', selected: true},
+                    {value: 'Rancho Del Rachel Ray', selected: true},
+                    {value: 'Rancho Del Vida', selected: false},
+                    {value: 'Rancho Penesquitos', selected: false},
+                    {value: 'Rancho Santa Fe', selected: false},
+                    {value: 'San Diego', selected: false},
+                    {value: 'Seattle', selected: false},
+                    {value: 'New Denver', selected: true},
+                    {value: 'New Los Angeles', selected: true},
+                    {value: 'New Omaha', selected: true},
+                    {value: 'New Rancho Del Ray', selected: true},
+                    {value: 'New Rancho Del Rachel Ray', selected: true},
+                    {value: 'New Rancho Del Vida', selected: false},
+                    {value: 'New Rancho Penesquitos', selected: false},
+                    {value: 'New Rancho Santa Fe', selected: false},
+                    {value: 'New San Diego', selected: false},
+                    {value: 'New Seattle', selected: false}
+                ];
+                contextSeach.addEventListener('change', function (e) {
+                    console.log(e)
+                });
+                document.body.appendChild(contextSeach);
+            });
+        </script>
+    </head>
+    <body></body>
+</html>
