@@ -1,10 +1,20 @@
 <!doctype html>
 <html>
     <head>
+        <style>
+            body {
+                --pp-context-search-width: 333px;
+            }
+        </style>
         <script src="lib/main.js"></script>
         <script>
             document.addEventListener('DOMContentLoaded', function () {
-                var contextSeach = ppContextSearch();
+                var contextSeach = new PPContextSearch();
+                contextSeach.addEventListener('beforechange', function (e) {
+                    // if this is unremakred, changes will be intercepted and prevented
+                    // e.preventDefault();
+                    console.log('beforechange called');
+                });
                 contextSeach.items = [
                     {value: 'Denver', selected: true},
                     {value: 'Los Angeles', selected: true},
@@ -28,7 +38,7 @@
                     {value: 'New Seattle', selected: false}
                 ];
                 contextSeach.addEventListener('change', function (e) {
-                    console.log(e)
+                    console.log(contextSeach.items, e);
                 });
                 document.body.appendChild(contextSeach);
             });
